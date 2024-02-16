@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#top{
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#workingArea{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    position: relative;
+    /* border:2px solid red; */
+}
+
+#nav{
+    pointer-events: all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#LogoImg{
+    height: 60px;    
+}
+#left, #right{
+    display:flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+#left a, #right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    transform: translate(0%,-50%);
+    justify-content: space-between;
+    width: 100%;
+    /* height: 80px; */
+    /* background-color: red; */
+}
+
+#contentLeft{
+    min-width:50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+#contentLeft .elem{
+    height: 110px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#contentLeft .elem h1{
+    line-height: .8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-weight: 200;
+    font-size: 9vw;
+}
+
+#contentLeft button{
+    pointer-events: all;
+    padding: .8vw 2vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contentRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    color: antiquewhite;
+}
+
+#contentRight p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#contentRight #imagediv{
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1522778034537-20a2486be803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#contentRight p:nth-child(3){
+    margin-bottom: 100px;
+}
+
+
